@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+<bean class="com.score.autowire.Answer" name="answer">
+<property name = "ans1" value="Java is a platform independent"></property>
+<property name="ans2" value="Java is a robust language"></property>
+<property name="ans3" value="Spring is a framewrok of java intercast"></property>
+</bean>
+
+<bean class="com.score.autowire.Question" name="q1" autowire="byName">
+<property name="que1" value="What is Java?"></property>
+</bean>
+</beans>
